@@ -11,7 +11,7 @@ provider "aws" {
   region = var.region
 }
 
-module "s3-web" {
+module "s3-webapp" {
   source  = "app.terraform.io/estephe-org/s3-web/aws"
   version = "1.0.0"
 }
