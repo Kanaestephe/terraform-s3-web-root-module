@@ -13,5 +13,8 @@ provider "aws" {
 
 module "s3-web" {
   source  = "app.terraform.io/estephe-org/s3-web/aws"
+  name   = var.name
+  region = var.region
+  prefix = var.prefix
   version = "1.0.0"
 }
